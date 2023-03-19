@@ -1,0 +1,110 @@
+.form_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+form {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+    resize: vertical;
+}
+
+input[type='password'] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+    resize: vertical;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.delete_from {
+    background-color: #fff;
+    flex-direction: initial;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.pagination a, .pagination .page-disabled {
+    display: inline-block;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 3px;
+}
+
+.pagination a {
+    background: #6c757d;
+    color: white;
+    text-decoration: none;
+}
+
+.pagination a:hover {
+    background: #565e64;
+    text-decoration: none;
+}
+
+.pagination .page-disabled {
+    background: white;
+    color: #dddddd
+}
+
+.pagination .current-page {
+    display: inline-block;
+}
+
+.pagination .current-page input {
+    width: 50px;
+    padding: 5px 7px;
+    font-size: inherit;
+    border-radius: 5px;
+    text-align: center;
+    border: solid 1px gray;
+}
+
+.current-page {
+    background-color: white;
+}
+
+.search_form {
+    flex-direction: row;
+    background-color: white;
+}
+
+.logout_form {
+    background-color: #f8f9fa;
+    padding: 0;
+    width: 100px;
+    margin: 0;
+}

@@ -1,0 +1,6 @@
+{% csrf_token %}
+{{ form.as_p }}
+<p>
+    <input type="hidden" name="project_id" value="{{ project_value }}" disabled id="project_id">
+</p>
+<button type="submit" class="btn btn-secondary">{{ button_text }}</button>

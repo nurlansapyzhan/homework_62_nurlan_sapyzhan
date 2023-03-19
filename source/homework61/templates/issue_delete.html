@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}
+    Delete Issue
+{% endblock %}
+{% block menu %}
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'projects' %}">Projects</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'project_create' %}">Create Project</a>
+    </li>
+{% endblock %}
+{% block content %}
+    <h1 class="mt-2">Are you sure you want to delete the issue?</h1>
+    <div class="card mt-2">
+        <h5 class="card-header">Issue Details</h5>
+        <div class="card-body">
+            <h5 class="card-title">{{ issue.summary }}</h5>
+            <p class="card-text">Description: {{ issue.description }}</p>
+            <p class="card-text">Status: {{ issue.status }}</p>
+            <p class="card-text">Type: {% for type in issue.type.all %} {{ type }}; {% endfor %}</p>
+            <form action="{% url 'issue_delete' issue.pk %}" method="post" class="delete_from">
+                {% csrf_token %}
+                <button class="btn btn-secondary">Delete</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}

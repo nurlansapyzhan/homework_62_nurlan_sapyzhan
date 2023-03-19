@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block title %}
+    Task Detail
+{% endblock %}
+{% block menu %}
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'projects' %}">Projects</a>
+    </li>
+    {% if user.is_autherticated %}
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'issue_create' %}">Add new issue</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'project_create' %}">Create Project</a>
+        </li>
+    {% endif %}
+{% endblock %}
+{% block content %}
+    <div class="card mt-2">
+        <h5 class="card-header">Issue Details</h5>
+        <div class="card-body">
+            <h5 class="card-title">{{ issue.summary }}</h5>
+            <p class="card-text">Description: {{ issue.description }}</p>
+            <p class="card-text">Status: {{ issue.status }}</p>
+            <p class="card-text">Type: {% for type in issue.type.all %} {{ type }}; {% endfor %}</p>
+            {% if user.is_authenticated %}
+                <a href="{% url 'issue_update' issue.pk %}" class="btn btn-secondary">Edit</a>
+                <a href="{% url 'issue_delete' issue.pk %}" class="btn btn-secondary">Delete</a>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}

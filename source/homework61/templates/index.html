@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %}
+    Main page
+{% endblock %}
+{% block menu %}
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'projects' %}">Projects</a>
+    </li>
+    {% if user.is_authenticated %}
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'issue_create' %}">Add new issue</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'project_create' %}">Create Project</a>
+        </li>
+    {% endif %}
+{% endblock %}
+{% block content %}
+    {% include 'partial/search.html' %}
+    {% for issue in issues %}
+        <div class="card mt-2">
+            <div class="card-body">
+                <h5 class="card-title">{{ issue.summary }}</h5>
+                <p class="card-text">{{ issue.description }}</p>
+                <a href="{% url 'issue_detail' issue.pk %}" class="btn btn-secondary">More</a>
+            </div>
+        </div>
+        {% empty %}
+        <h2>No issues</h2>
+        <a href="{% url 'index' %}" class="btn btn-secondary">Back</a>
+    {% endfor %}
+    {% if is_paginated %}
+        {% include 'partial/pagination.html' %}
+    {% endif %}
+{% endblock %}

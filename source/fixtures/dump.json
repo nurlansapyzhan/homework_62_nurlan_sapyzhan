@@ -1,0 +1,1226 @@
+[
+{
+  "model": "homework61.status",
+  "pk": 1,
+  "fields": {
+    "name": "New"
+  }
+},
+{
+  "model": "homework61.status",
+  "pk": 2,
+  "fields": {
+    "name": "In Progress"
+  }
+},
+{
+  "model": "homework61.status",
+  "pk": 3,
+  "fields": {
+    "name": "Done"
+  }
+},
+{
+  "model": "homework61.issuetype",
+  "pk": 1,
+  "fields": {
+    "issue": 2,
+    "type": 1
+  }
+},
+{
+  "model": "homework61.issuetype",
+  "pk": 2,
+  "fields": {
+    "issue": 8,
+    "type": 3
+  }
+},
+{
+  "model": "homework61.issuetype",
+  "pk": 3,
+  "fields": {
+    "issue": 13,
+    "type": 1
+  }
+},
+{
+  "model": "homework61.issuetype",
+  "pk": 4,
+  "fields": {
+    "issue": 14,
+    "type": 2
+  }
+},
+{
+  "model": "homework61.issuetype",
+  "pk": 5,
+  "fields": {
+    "issue": 15,
+    "type": 1
+  }
+},
+{
+  "model": "homework61.issuetype",
+  "pk": 6,
+  "fields": {
+    "issue": 15,
+    "type": 2
+  }
+},
+{
+  "model": "homework61.issuetype",
+  "pk": 7,
+  "fields": {
+    "issue": 16,
+    "type": 1
+  }
+},
+{
+  "model": "homework61.issuetype",
+  "pk": 8,
+  "fields": {
+    "issue": 16,
+    "type": 3
+  }
+},
+{
+  "model": "homework61.issuetype",
+  "pk": 9,
+  "fields": {
+    "issue": 17,
+    "type": 1
+  }
+},
+{
+  "model": "homework61.issuetype",
+  "pk": 10,
+  "fields": {
+    "issue": 17,
+    "type": 2
+  }
+},
+{
+  "model": "homework61.issuetype",
+  "pk": 11,
+  "fields": {
+    "issue": 17,
+    "type": 3
+  }
+},
+{
+  "model": "homework61.issuetype",
+  "pk": 12,
+  "fields": {
+    "issue": 18,
+    "type": 1
+  }
+},
+{
+  "model": "homework61.issuetype",
+  "pk": 13,
+  "fields": {
+    "issue": 18,
+    "type": 3
+  }
+},
+{
+  "model": "homework61.issuetype",
+  "pk": 14,
+  "fields": {
+    "issue": 19,
+    "type": 2
+  }
+},
+{
+  "model": "homework61.issuetype",
+  "pk": 15,
+  "fields": {
+    "issue": 20,
+    "type": 1
+  }
+},
+{
+  "model": "homework61.issuetype",
+  "pk": 16,
+  "fields": {
+    "issue": 20,
+    "type": 2
+  }
+},
+{
+  "model": "homework61.issuetype",
+  "pk": 17,
+  "fields": {
+    "issue": 20,
+    "type": 3
+  }
+},
+{
+  "model": "homework61.issuetype",
+  "pk": 18,
+  "fields": {
+    "issue": 21,
+    "type": 2
+  }
+},
+{
+  "model": "homework61.issuetype",
+  "pk": 19,
+  "fields": {
+    "issue": 22,
+    "type": 1
+  }
+},
+{
+  "model": "homework61.issuetype",
+  "pk": 20,
+  "fields": {
+    "issue": 22,
+    "type": 3
+  }
+},
+{
+  "model": "homework61.issuetype",
+  "pk": 21,
+  "fields": {
+    "issue": 23,
+    "type": 1
+  }
+},
+{
+  "model": "homework61.issuetype",
+  "pk": 22,
+  "fields": {
+    "issue": 23,
+    "type": 2
+  }
+},
+{
+  "model": "homework61.issuetype",
+  "pk": 23,
+  "fields": {
+    "issue": 24,
+    "type": 1
+  }
+},
+{
+  "model": "homework61.issuetype",
+  "pk": 24,
+  "fields": {
+    "issue": 24,
+    "type": 3
+  }
+},
+{
+  "model": "homework61.issuetype",
+  "pk": 25,
+  "fields": {
+    "issue": 25,
+    "type": 3
+  }
+},
+{
+  "model": "homework61.issuetype",
+  "pk": 26,
+  "fields": {
+    "issue": 26,
+    "type": 1
+  }
+},
+{
+  "model": "homework61.issuetype",
+  "pk": 27,
+  "fields": {
+    "issue": 26,
+    "type": 3
+  }
+},
+{
+  "model": "homework61.issue",
+  "pk": 2,
+  "fields": {
+    "summary": "Create issue",
+    "description": "Creat new issue",
+    "status": 1,
+    "created_date": "2023-03-15T17:29:15.320Z",
+    "updated_date": "2023-03-15T17:29:15.320Z",
+    "is_deleted": false,
+    "project": 1
+  }
+},
+{
+  "model": "homework61.issue",
+  "pk": 8,
+  "fields": {
+    "summary": "Create new issue",
+    "description": "asdasd",
+    "status": 2,
+    "created_date": "2023-03-15T17:40:59.258Z",
+    "updated_date": "2023-03-15T17:41:15.176Z",
+    "is_deleted": true,
+    "project": 1
+  }
+},
+{
+  "model": "homework61.issue",
+  "pk": 13,
+  "fields": {
+    "summary": "Aasdasd",
+    "description": "asdasd",
+    "status": 3,
+    "created_date": "2023-03-15T17:48:23.955Z",
+    "updated_date": "2023-03-15T17:48:27.027Z",
+    "is_deleted": true,
+    "project": 1
+  }
+},
+{
+  "model": "homework61.issue",
+  "pk": 14,
+  "fields": {
+    "summary": "Django models",
+    "description": "Fix django models",
+    "status": 2,
+    "created_date": "2023-03-15T17:49:09.667Z",
+    "updated_date": "2023-03-15T17:49:09.667Z",
+    "is_deleted": false,
+    "project": 2
+  }
+},
+{
+  "model": "homework61.issue",
+  "pk": 15,
+  "fields": {
+    "summary": "Bug fix",
+    "description": "fix bugs in issues.py file",
+    "status": 2,
+    "created_date": "2023-03-15T18:53:08.215Z",
+    "updated_date": "2023-03-15T18:53:08.215Z",
+    "is_deleted": false,
+    "project": 1
+  }
+},
+{
+  "model": "homework61.issue",
+  "pk": 16,
+  "fields": {
+    "summary": "Finish homework",
+    "description": "Finish homework №61",
+    "status": 2,
+    "created_date": "2023-03-15T18:53:40.643Z",
+    "updated_date": "2023-03-15T18:53:40.643Z",
+    "is_deleted": false,
+    "project": 1
+  }
+},
+{
+  "model": "homework61.issue",
+  "pk": 17,
+  "fields": {
+    "summary": "Fix models bug",
+    "description": "Fix models.py file bug",
+    "status": 3,
+    "created_date": "2023-03-15T18:54:19.580Z",
+    "updated_date": "2023-03-15T18:54:19.580Z",
+    "is_deleted": false,
+    "project": 2
+  }
+},
+{
+  "model": "homework61.issue",
+  "pk": 18,
+  "fields": {
+    "summary": "Implement functioanry",
+    "description": "Implement functionality that allows users to modify issues",
+    "status": 3,
+    "created_date": "2023-03-15T18:54:44.002Z",
+    "updated_date": "2023-03-15T18:54:44.002Z",
+    "is_deleted": false,
+    "project": 2
+  }
+},
+{
+  "model": "homework61.issue",
+  "pk": 19,
+  "fields": {
+    "summary": "Fix a bug that prevents users from successfully creating a task",
+    "description": "Fix a bug that prevents users from successfully creating a task",
+    "status": 1,
+    "created_date": "2023-03-15T18:55:11.240Z",
+    "updated_date": "2023-03-15T18:55:11.240Z",
+    "is_deleted": false,
+    "project": 2
+  }
+},
+{
+  "model": "homework61.issue",
+  "pk": 20,
+  "fields": {
+    "summary": "Fix a bug in the code that prevents some users from accessing a specific page of the site",
+    "description": "Fix a bug in the code that prevents some users from accessing a specific page of the site",
+    "status": 2,
+    "created_date": "2023-03-15T18:55:35.878Z",
+    "updated_date": "2023-03-15T18:55:35.878Z",
+    "is_deleted": false,
+    "project": 1
+  }
+},
+{
+  "model": "homework61.issue",
+  "pk": 21,
+  "fields": {
+    "summary": "Fix a bug due to which certain users cannot send messages through the feedback form",
+    "description": "Fix a bug due to which certain users cannot send messages through the feedback form",
+    "status": 3,
+    "created_date": "2023-03-15T18:56:12.592Z",
+    "updated_date": "2023-03-15T18:56:12.592Z",
+    "is_deleted": false,
+    "project": 1
+  }
+},
+{
+  "model": "homework61.issue",
+  "pk": 22,
+  "fields": {
+    "summary": "It is necessary to add a new section to the application menu and related functionality",
+    "description": "It is necessary to add a new section to the application menu and related functionality",
+    "status": 1,
+    "created_date": "2023-03-15T18:56:47.908Z",
+    "updated_date": "2023-03-15T18:56:47.908Z",
+    "is_deleted": false,
+    "project": 2
+  }
+},
+{
+  "model": "homework61.issue",
+  "pk": 23,
+  "fields": {
+    "summary": "The application has a bug",
+    "description": "The application has a bug that causes the application to behave unexpectedly. Find out the cause of the error and fix it",
+    "status": 3,
+    "created_date": "2023-03-15T18:57:29.905Z",
+    "updated_date": "2023-03-15T18:57:29.905Z",
+    "is_deleted": false,
+    "project": 1
+  }
+},
+{
+  "model": "homework61.issue",
+  "pk": 24,
+  "fields": {
+    "summary": "Development of a new feature",
+    "description": "Develop a new feature that allows create new issue",
+    "status": 3,
+    "created_date": "2023-03-15T18:57:54.535Z",
+    "updated_date": "2023-03-15T18:57:54.535Z",
+    "is_deleted": false,
+    "project": 1
+  }
+},
+{
+  "model": "homework61.issue",
+  "pk": 25,
+  "fields": {
+    "summary": "English classes",
+    "description": "Attend an English class by the end of the month",
+    "status": 3,
+    "created_date": "2023-03-15T18:58:26.981Z",
+    "updated_date": "2023-03-15T18:58:26.981Z",
+    "is_deleted": false,
+    "project": 1
+  }
+},
+{
+  "model": "homework61.issue",
+  "pk": 26,
+  "fields": {
+    "summary": "Django lessons",
+    "description": "Attend a Django class in Attracrot school",
+    "status": 2,
+    "created_date": "2023-03-15T18:58:50.840Z",
+    "updated_date": "2023-03-15T18:58:50.840Z",
+    "is_deleted": false,
+    "project": 2
+  }
+},
+{
+  "model": "homework61.type",
+  "pk": 1,
+  "fields": {
+    "name": "Task"
+  }
+},
+{
+  "model": "homework61.type",
+  "pk": 2,
+  "fields": {
+    "name": "Bug"
+  }
+},
+{
+  "model": "homework61.type",
+  "pk": 3,
+  "fields": {
+    "name": "Enhancement"
+  }
+},
+{
+  "model": "homework61.project",
+  "pk": 1,
+  "fields": {
+    "start_date": "2023-03-13",
+    "end_date": "2023-06-21",
+    "name": "Main project",
+    "description": "Main project"
+  }
+},
+{
+  "model": "homework61.project",
+  "pk": 2,
+  "fields": {
+    "start_date": "2022-08-16",
+    "end_date": "2023-06-16",
+    "name": "Django Project",
+    "description": "Main Django Project"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add Статус",
+    "content_type": 7,
+    "codename": "add_status"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change Статус",
+    "content_type": 7,
+    "codename": "change_status"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete Статус",
+    "content_type": 7,
+    "codename": "delete_status"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view Статус",
+    "content_type": 7,
+    "codename": "view_status"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add Тип задачи",
+    "content_type": 8,
+    "codename": "add_type"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change Тип задачи",
+    "content_type": 8,
+    "codename": "change_type"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete Тип задачи",
+    "content_type": 8,
+    "codename": "delete_type"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view Тип задачи",
+    "content_type": 8,
+    "codename": "view_type"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add issue type",
+    "content_type": 9,
+    "codename": "add_issuetype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change issue type",
+    "content_type": 9,
+    "codename": "change_issuetype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete issue type",
+    "content_type": 9,
+    "codename": "delete_issuetype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view issue type",
+    "content_type": 9,
+    "codename": "view_issuetype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add Задача",
+    "content_type": 10,
+    "codename": "add_issue"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change Задача",
+    "content_type": 10,
+    "codename": "change_issue"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete Задача",
+    "content_type": 10,
+    "codename": "delete_issue"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view Задача",
+    "content_type": 10,
+    "codename": "view_issue"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add Задача",
+    "content_type": 11,
+    "codename": "add_issue"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change Задача",
+    "content_type": 11,
+    "codename": "change_issue"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete Задача",
+    "content_type": 11,
+    "codename": "delete_issue"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view Задача",
+    "content_type": 11,
+    "codename": "view_issue"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add Статус",
+    "content_type": 12,
+    "codename": "add_status"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change Статус",
+    "content_type": 12,
+    "codename": "change_status"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete Статус",
+    "content_type": 12,
+    "codename": "delete_status"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view Статус",
+    "content_type": 12,
+    "codename": "view_status"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add Тип задачи",
+    "content_type": 13,
+    "codename": "add_type"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change Тип задачи",
+    "content_type": 13,
+    "codename": "change_type"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete Тип задачи",
+    "content_type": 13,
+    "codename": "delete_type"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view Тип задачи",
+    "content_type": 13,
+    "codename": "view_type"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 53,
+  "fields": {
+    "name": "Can add issue type",
+    "content_type": 14,
+    "codename": "add_issuetype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 54,
+  "fields": {
+    "name": "Can change issue type",
+    "content_type": 14,
+    "codename": "change_issuetype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 55,
+  "fields": {
+    "name": "Can delete issue type",
+    "content_type": 14,
+    "codename": "delete_issuetype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 56,
+  "fields": {
+    "name": "Can view issue type",
+    "content_type": 14,
+    "codename": "view_issuetype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 57,
+  "fields": {
+    "name": "Can add Проект",
+    "content_type": 15,
+    "codename": "add_project"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 58,
+  "fields": {
+    "name": "Can change Проект",
+    "content_type": 15,
+    "codename": "change_project"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 59,
+  "fields": {
+    "name": "Can delete Проект",
+    "content_type": 15,
+    "codename": "delete_project"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 60,
+  "fields": {
+    "name": "Can view Проект",
+    "content_type": 15,
+    "codename": "view_project"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 61,
+  "fields": {
+    "name": "Can add Задача",
+    "content_type": 16,
+    "codename": "add_issue"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 62,
+  "fields": {
+    "name": "Can change Задача",
+    "content_type": 16,
+    "codename": "change_issue"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 63,
+  "fields": {
+    "name": "Can delete Задача",
+    "content_type": 16,
+    "codename": "delete_issue"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 64,
+  "fields": {
+    "name": "Can view Задача",
+    "content_type": 16,
+    "codename": "view_issue"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 65,
+  "fields": {
+    "name": "Can add Статус",
+    "content_type": 17,
+    "codename": "add_status"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 66,
+  "fields": {
+    "name": "Can change Статус",
+    "content_type": 17,
+    "codename": "change_status"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 67,
+  "fields": {
+    "name": "Can delete Статус",
+    "content_type": 17,
+    "codename": "delete_status"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 68,
+  "fields": {
+    "name": "Can view Статус",
+    "content_type": 17,
+    "codename": "view_status"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 69,
+  "fields": {
+    "name": "Can add Тип задачи",
+    "content_type": 18,
+    "codename": "add_type"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 70,
+  "fields": {
+    "name": "Can change Тип задачи",
+    "content_type": 18,
+    "codename": "change_type"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 71,
+  "fields": {
+    "name": "Can delete Тип задачи",
+    "content_type": 18,
+    "codename": "delete_type"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 72,
+  "fields": {
+    "name": "Can view Тип задачи",
+    "content_type": 18,
+    "codename": "view_type"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 73,
+  "fields": {
+    "name": "Can add issue type",
+    "content_type": 19,
+    "codename": "add_issuetype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 74,
+  "fields": {
+    "name": "Can change issue type",
+    "content_type": 19,
+    "codename": "change_issuetype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 75,
+  "fields": {
+    "name": "Can delete issue type",
+    "content_type": 19,
+    "codename": "delete_issuetype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 76,
+  "fields": {
+    "name": "Can view issue type",
+    "content_type": 19,
+    "codename": "view_issuetype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 77,
+  "fields": {
+    "name": "Can add Проект",
+    "content_type": 20,
+    "codename": "add_project"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 78,
+  "fields": {
+    "name": "Can change Проект",
+    "content_type": 20,
+    "codename": "change_project"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 79,
+  "fields": {
+    "name": "Can delete Проект",
+    "content_type": 20,
+    "codename": "delete_project"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 80,
+  "fields": {
+    "name": "Can view Проект",
+    "content_type": 20,
+    "codename": "view_project"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$EWNERoobSQ5ygFxD2XacJp$MRzGMpSd8YoSfeHb/k/kH/1kzjyDo2PO48bwbQKpL8c=",
+    "last_login": "2023-03-15T18:51:59.929Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-03-06T18:02:55.644Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
