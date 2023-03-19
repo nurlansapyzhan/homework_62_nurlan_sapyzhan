@@ -1,27 +1,27 @@
 [
 {
-  "model": "homework61.status",
+  "model": "homework62.status",
   "pk": 1,
   "fields": {
     "name": "New"
   }
 },
 {
-  "model": "homework61.status",
+  "model": "homework62.status",
   "pk": 2,
   "fields": {
     "name": "In Progress"
   }
 },
 {
-  "model": "homework61.status",
+  "model": "homework62.status",
   "pk": 3,
   "fields": {
     "name": "Done"
   }
 },
 {
-  "model": "homework61.issuetype",
+  "model": "homework62.issuetype",
   "pk": 1,
   "fields": {
     "issue": 2,
@@ -29,7 +29,7 @@
   }
 },
 {
-  "model": "homework61.issuetype",
+  "model": "homework62.issuetype",
   "pk": 2,
   "fields": {
     "issue": 8,
@@ -37,7 +37,7 @@
   }
 },
 {
-  "model": "homework61.issuetype",
+  "model": "homework62.issuetype",
   "pk": 3,
   "fields": {
     "issue": 13,
@@ -45,7 +45,7 @@
   }
 },
 {
-  "model": "homework61.issuetype",
+  "model": "homework62.issuetype",
   "pk": 4,
   "fields": {
     "issue": 14,
@@ -53,7 +53,7 @@
   }
 },
 {
-  "model": "homework61.issuetype",
+  "model": "homework62.issuetype",
   "pk": 5,
   "fields": {
     "issue": 15,
@@ -61,7 +61,7 @@
   }
 },
 {
-  "model": "homework61.issuetype",
+  "model": "homework62.issuetype",
   "pk": 6,
   "fields": {
     "issue": 15,
@@ -69,7 +69,7 @@
   }
 },
 {
-  "model": "homework61.issuetype",
+  "model": "homework62.issuetype",
   "pk": 7,
   "fields": {
     "issue": 16,
@@ -77,7 +77,7 @@
   }
 },
 {
-  "model": "homework61.issuetype",
+  "model": "homework62.issuetype",
   "pk": 8,
   "fields": {
     "issue": 16,
@@ -85,7 +85,7 @@
   }
 },
 {
-  "model": "homework61.issuetype",
+  "model": "homework62.issuetype",
   "pk": 9,
   "fields": {
     "issue": 17,
@@ -93,7 +93,7 @@
   }
 },
 {
-  "model": "homework61.issuetype",
+  "model": "homework62.issuetype",
   "pk": 10,
   "fields": {
     "issue": 17,
@@ -101,7 +101,7 @@
   }
 },
 {
-  "model": "homework61.issuetype",
+  "model": "homework62.issuetype",
   "pk": 11,
   "fields": {
     "issue": 17,
@@ -109,7 +109,7 @@
   }
 },
 {
-  "model": "homework61.issuetype",
+  "model": "homework62.issuetype",
   "pk": 12,
   "fields": {
     "issue": 18,
@@ -117,7 +117,7 @@
   }
 },
 {
-  "model": "homework61.issuetype",
+  "model": "homework62.issuetype",
   "pk": 13,
   "fields": {
     "issue": 18,
@@ -125,7 +125,7 @@
   }
 },
 {
-  "model": "homework61.issuetype",
+  "model": "homework62.issuetype",
   "pk": 14,
   "fields": {
     "issue": 19,
@@ -133,7 +133,7 @@
   }
 },
 {
-  "model": "homework61.issuetype",
+  "model": "homework62.issuetype",
   "pk": 15,
   "fields": {
     "issue": 20,
@@ -141,7 +141,7 @@
   }
 },
 {
-  "model": "homework61.issuetype",
+  "model": "homework62.issuetype",
   "pk": 16,
   "fields": {
     "issue": 20,
@@ -149,7 +149,7 @@
   }
 },
 {
-  "model": "homework61.issuetype",
+  "model": "homework62.issuetype",
   "pk": 17,
   "fields": {
     "issue": 20,
@@ -157,7 +157,7 @@
   }
 },
 {
-  "model": "homework61.issuetype",
+  "model": "homework62.issuetype",
   "pk": 18,
   "fields": {
     "issue": 21,
@@ -165,7 +165,7 @@
   }
 },
 {
-  "model": "homework61.issuetype",
+  "model": "homework62.issuetype",
   "pk": 19,
   "fields": {
     "issue": 22,
@@ -173,7 +173,7 @@
   }
 },
 {
-  "model": "homework61.issuetype",
+  "model": "homework62.issuetype",
   "pk": 20,
   "fields": {
     "issue": 22,
@@ -181,7 +181,7 @@
   }
 },
 {
-  "model": "homework61.issuetype",
+  "model": "homework62.issuetype",
   "pk": 21,
   "fields": {
     "issue": 23,
@@ -189,7 +189,7 @@
   }
 },
 {
-  "model": "homework61.issuetype",
+  "model": "homework62.issuetype",
   "pk": 22,
   "fields": {
     "issue": 23,
@@ -197,7 +197,7 @@
   }
 },
 {
-  "model": "homework61.issuetype",
+  "model": "homework62.issuetype",
   "pk": 23,
   "fields": {
     "issue": 24,
@@ -205,7 +205,7 @@
   }
 },
 {
-  "model": "homework61.issuetype",
+  "model": "homework62.issuetype",
   "pk": 24,
   "fields": {
     "issue": 24,
@@ -213,7 +213,7 @@
   }
 },
 {
-  "model": "homework61.issuetype",
+  "model": "homework62.issuetype",
   "pk": 25,
   "fields": {
     "issue": 25,
@@ -221,7 +221,7 @@
   }
 },
 {
-  "model": "homework61.issuetype",
+  "model": "homework62.issuetype",
   "pk": 26,
   "fields": {
     "issue": 26,
@@ -229,7 +229,7 @@
   }
 },
 {
-  "model": "homework61.issuetype",
+  "model": "homework62.issuetype",
   "pk": 27,
   "fields": {
     "issue": 26,
@@ -237,7 +237,7 @@
   }
 },
 {
-  "model": "homework61.issue",
+  "model": "homework62.issue",
   "pk": 2,
   "fields": {
     "summary": "Create issue",
@@ -250,7 +250,7 @@
   }
 },
 {
-  "model": "homework61.issue",
+  "model": "homework62.issue",
   "pk": 8,
   "fields": {
     "summary": "Create new issue",
@@ -263,7 +263,7 @@
   }
 },
 {
-  "model": "homework61.issue",
+  "model": "homework62.issue",
   "pk": 13,
   "fields": {
     "summary": "Aasdasd",
@@ -276,7 +276,7 @@
   }
 },
 {
-  "model": "homework61.issue",
+  "model": "homework62.issue",
   "pk": 14,
   "fields": {
     "summary": "Django models",
@@ -289,7 +289,7 @@
   }
 },
 {
-  "model": "homework61.issue",
+  "model": "homework62.issue",
   "pk": 15,
   "fields": {
     "summary": "Bug fix",
@@ -302,7 +302,7 @@
   }
 },
 {
-  "model": "homework61.issue",
+  "model": "homework62.issue",
   "pk": 16,
   "fields": {
     "summary": "Finish homework",
@@ -315,7 +315,7 @@
   }
 },
 {
-  "model": "homework61.issue",
+  "model": "homework62.issue",
   "pk": 17,
   "fields": {
     "summary": "Fix models bug",
@@ -328,7 +328,7 @@
   }
 },
 {
-  "model": "homework61.issue",
+  "model": "homework62.issue",
   "pk": 18,
   "fields": {
     "summary": "Implement functioanry",
@@ -341,7 +341,7 @@
   }
 },
 {
-  "model": "homework61.issue",
+  "model": "homework62.issue",
   "pk": 19,
   "fields": {
     "summary": "Fix a bug that prevents users from successfully creating a task",
@@ -354,7 +354,7 @@
   }
 },
 {
-  "model": "homework61.issue",
+  "model": "homework62.issue",
   "pk": 20,
   "fields": {
     "summary": "Fix a bug in the code that prevents some users from accessing a specific page of the site",
@@ -367,7 +367,7 @@
   }
 },
 {
-  "model": "homework61.issue",
+  "model": "homework62.issue",
   "pk": 21,
   "fields": {
     "summary": "Fix a bug due to which certain users cannot send messages through the feedback form",
@@ -380,7 +380,7 @@
   }
 },
 {
-  "model": "homework61.issue",
+  "model": "homework62.issue",
   "pk": 22,
   "fields": {
     "summary": "It is necessary to add a new section to the application menu and related functionality",
@@ -393,7 +393,7 @@
   }
 },
 {
-  "model": "homework61.issue",
+  "model": "homework62.issue",
   "pk": 23,
   "fields": {
     "summary": "The application has a bug",
@@ -406,7 +406,7 @@
   }
 },
 {
-  "model": "homework61.issue",
+  "model": "homework62.issue",
   "pk": 24,
   "fields": {
     "summary": "Development of a new feature",
@@ -419,7 +419,7 @@
   }
 },
 {
-  "model": "homework61.issue",
+  "model": "homework62.issue",
   "pk": 25,
   "fields": {
     "summary": "English classes",
@@ -432,7 +432,7 @@
   }
 },
 {
-  "model": "homework61.issue",
+  "model": "homework62.issue",
   "pk": 26,
   "fields": {
     "summary": "Django lessons",
@@ -445,28 +445,28 @@
   }
 },
 {
-  "model": "homework61.type",
+  "model": "homework62.type",
   "pk": 1,
   "fields": {
     "name": "Task"
   }
 },
 {
-  "model": "homework61.type",
+  "model": "homework62.type",
   "pk": 2,
   "fields": {
     "name": "Bug"
   }
 },
 {
-  "model": "homework61.type",
+  "model": "homework62.type",
   "pk": 3,
   "fields": {
     "name": "Enhancement"
   }
 },
 {
-  "model": "homework61.project",
+  "model": "homework62.project",
   "pk": 1,
   "fields": {
     "start_date": "2023-03-13",
@@ -476,7 +476,7 @@
   }
 },
 {
-  "model": "homework61.project",
+  "model": "homework62.project",
   "pk": 2,
   "fields": {
     "start_date": "2022-08-16",

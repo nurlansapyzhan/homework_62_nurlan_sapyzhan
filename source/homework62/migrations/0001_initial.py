@@ -52,18 +52,18 @@ class Migration(migrations.Migration):
             name='IssueType',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('issue', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, related_name='issue_types', to='homework61.issue', verbose_name='Задача')),
-                ('type', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, related_name='type_issues', to='homework61.type', verbose_name='Тип')),
+                ('issue', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, related_name='issue_types', to='homework62.issue', verbose_name='Задача')),
+                ('type', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, related_name='type_issues', to='homework62.type', verbose_name='Тип')),
             ],
         ),
         migrations.AddField(
             model_name='issue',
             name='status',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to='homework61.status'),
+            field=models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to='homework62.status'),
         ),
         migrations.AddField(
             model_name='issue',
             name='type',
-            field=models.ManyToManyField(blank=True, related_name='issues', through='homework61.IssueType', to='homework61.type'),
+            field=models.ManyToManyField(blank=True, related_name='issues', through='homework62.IssueType', to='homework62.type'),
         ),
     ]

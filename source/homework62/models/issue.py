@@ -1,7 +1,7 @@
 from django.core.exceptions import ValidationError
 from django.db import models
 
-from homework61.models.issuetype import IssueType
+from homework62.models.issuetype import IssueType
 
 
 def validate_summary_no_digits(value):
@@ -36,11 +36,11 @@ class Issue(models.Model):
         validators=[validate_description_no_bad_words]
     )
     status = models.ForeignKey(
-        to='homework61.Status',
+        to='homework62.Status',
         on_delete=models.PROTECT
     )
     type = models.ManyToManyField(
-        to='homework61.Type',
+        to='homework62.Type',
         related_name='issues',
         through=IssueType,
         through_fields=('issue', 'type'),
@@ -58,7 +58,7 @@ class Issue(models.Model):
         default=False
     )
     project = models.ForeignKey(
-        to='homework61.Project',
+        to='homework62.Project',
         on_delete=models.PROTECT,
         default=1
     )

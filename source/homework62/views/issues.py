@@ -3,8 +3,8 @@ from django.shortcuts import redirect
 from django.urls import reverse, reverse_lazy
 from django.views.generic import DetailView, CreateView, UpdateView, DeleteView
 
-from homework61.forms import IssueForm
-from homework61.models import Issue
+from homework62.forms import IssueForm
+from homework62.models import Issue
 
 
 class IssueDetail(DetailView):

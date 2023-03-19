@@ -3,13 +3,13 @@ from django.db import models
 
 class IssueType(models.Model):
     issue = models.ForeignKey(
-        'homework61.Issue',
+        'homework62.Issue',
         related_name='issue_types',
         on_delete=models.PROTECT,
         verbose_name='Задача'
     )
     type = models.ForeignKey(
-        'homework61.Type',
+        'homework62.Type',
         related_name='type_issues',
         on_delete=models.PROTECT,
         verbose_name='Тип'

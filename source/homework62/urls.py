@@ -1,10 +1,10 @@
 from django.urls import path
 
-from homework61.views.base import IndexView, IndexRedirectView
+from homework62.views.base import IndexView, IndexRedirectView
 
-from homework61.views.issues import IssueDetail, IssueUpdateView, IssueCreateView, IssueDeleteView
+from homework62.views.issues import IssueDetail, IssueUpdateView, IssueCreateView, IssueDeleteView
 
-from homework61.views.projects import ProjectsView, ProjectDetail, ProjectCreate, IssueProjectCreate
+from homework62.views.projects import ProjectsView, ProjectDetail, ProjectCreate, IssueProjectCreate
 
 urlpatterns = [
     path('', IndexView.as_view(), name='index'),

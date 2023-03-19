@@ -7,13 +7,13 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('homework61', '0004_project'),
+        ('homework62', '0004_project'),
     ]
 
     operations = [
         migrations.AddField(
             model_name='issue',
             name='project',
-            field=models.ForeignKey(default=1, on_delete=django.db.models.deletion.PROTECT, to='homework61.project'),
+            field=models.ForeignKey(default=1, on_delete=django.db.models.deletion.PROTECT, to='homework62.project'),
         ),
     ]

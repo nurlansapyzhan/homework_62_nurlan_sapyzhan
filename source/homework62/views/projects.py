@@ -3,9 +3,9 @@ from django.shortcuts import get_object_or_404
 from django.urls import reverse
 from django.views.generic import ListView, DetailView, CreateView
 
-from homework61.models import Project, Issue
+from homework62.models import Project, Issue
 
-from homework61.forms import ProjectForm, IssueForm, IssueProjectForm
+from homework62.forms import ProjectForm, IssueForm, IssueProjectForm
 
 
 class ProjectsView(ListView):
