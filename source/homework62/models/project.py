@@ -1,3 +1,4 @@
+from django.contrib.auth.models import User
 from django.db import models
 
 
@@ -21,6 +22,7 @@ class Project(models.Model):
         null=True,
         verbose_name='Описание'
     )
+    members = models.ManyToManyField(to=User)
 
     def __str__(self):
         return self.name

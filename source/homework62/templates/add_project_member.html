@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>Add Member to {{ project.name }}</h2>
+    <form method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="user_id">Username:</label>
+            <select class="form-control" id="user_id" name="user_id">
+                {% for member in users %}
+                    <option value="{{ member.id }}">{{ member.username }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <button type="submit" class="btn btn-secondary">Add member</button>
+    </form>
+{% endblock %}

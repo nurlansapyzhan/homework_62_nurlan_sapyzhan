@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h3>Delete Member from {{ project.name }}</h3>
+    <form method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="user_id">User:</label>
+            <select class="form-control" id="user_id" name="user_id">
+                {% for member in project.members.all %}
+                    <option value="{{ member.id }}">{{ member.username }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <button type="submit" class="btn btn-secondary">Delete member</button>
+    </form>
+{% endblock %}

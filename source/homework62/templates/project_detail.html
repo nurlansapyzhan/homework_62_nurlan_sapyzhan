@@ -20,6 +20,12 @@
         <div class="card-body">
             <h5 class="card-title">{{ project.name }}</h5>
             <p class="card-text">{{ project.description }}</p>
+            <p class="card-text">Members: {% for member in members %} {{ member }}; {% empty %} No members
+                yet {% endfor %}</p>
+            {% if user.is_authenticated %}
+                <a href="{% url 'add_member' project.pk %}" class="btn btn-secondary">Add member</a>
+                <a href="{% url 'delete_member' project.pk %}" class="btn btn-secondary">Delete member</a>
+            {% endif %}
         </div>
     </div>
     <div class="issues_block mt-2">
