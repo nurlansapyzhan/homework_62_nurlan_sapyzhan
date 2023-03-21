@@ -2,8 +2,8 @@ from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.contrib.auth.models import User
 from django.core.exceptions import ValidationError
 from django.shortcuts import get_object_or_404, redirect, render
-from django.urls import reverse
-from django.views.generic import ListView, DetailView, CreateView
+from django.urls import reverse, reverse_lazy
+from django.views.generic import ListView, DetailView, CreateView, DeleteView, UpdateView
 
 from homework62.models import Project, Issue
 
@@ -93,3 +93,24 @@ def delete_project_member(request, pk):
         project.members.remove(user)
         return redirect('project_detail', pk=pk)
     return render(request, 'delete_project_member.html', context={'project': project})
+
+
+class ProjectDeleteView(UserPassesTestMixin, DeleteView):
+    template_name = 'project_delete.html'
+    model = Project
+    context_object_name = 'project'
+    success_url = reverse_lazy('index')
+
+    def test_func(self):
+        return self.request.user.has_perm('homework62.delete_project')
+
+
+class ProjectUpdateView(UserPassesTestMixin, UpdateView):
+    model = Project
+    context_object_name = 'project'
+    fields = ['name', 'description', 'start_date', 'end_date', 'members']
+    template_name = 'project_edit.html'
+    success_url = reverse_lazy('index')
+
+    def test_func(self):
+        return self.request.user.has_perm('homework62.change_project')

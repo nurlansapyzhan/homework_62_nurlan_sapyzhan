@@ -14,6 +14,12 @@
         <div class="card mt-2">
             <div class="card-body">
                 <h5 class="card-title">{{ project.name }}</h5>
+                {% if perms.homework62.delete_project %}
+                    <a href="{% url 'project_delete' project.pk %}" class="btn btn-secondary">Delete project</a>
+                {% endif %}
+                {% if perms.homework62.change_project %}
+                    <a href="{% url 'project_edit' project.pk %}" class="btn btn-secondary">Edit project</a>
+                {% endif %}
                 <a href="{% url 'project_detail' project.pk %}" class="btn btn-secondary">More</a>
             </div>
         </div>

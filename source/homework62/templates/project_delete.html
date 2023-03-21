@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}
+    Create Project
+{% endblock %}
+{% block menu %}
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'projects' %}">Projects</a>
+    </li>
+{% endblock %}
+{% block content %}
+    <div class="form_div">
+        <h3>Delete {{ project.name }}?</h3>
+        <form action="{% url 'project_delete' project.pk %}" method="post" class="delete_project_form">
+            {% csrf_token %}
+            <button class="btn btn-secondary" type="submit">Delete</button>
+        </form>
+    </div>
+{% endblock %}

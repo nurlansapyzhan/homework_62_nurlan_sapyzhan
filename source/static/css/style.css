@@ -108,3 +108,7 @@ label {
     width: 100px;
     margin: 0;
 }
+
+.delete_project_form{
+    background-color: white;
+}
