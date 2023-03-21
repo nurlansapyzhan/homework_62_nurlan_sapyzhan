@@ -6,10 +6,7 @@
     <li class="nav-item">
         <a class="nav-link" href="{% url 'projects' %}">Projects</a>
     </li>
-    {% if user.is_authenticated %}
-        <li class="nav-item">
-            <a class="nav-link" href="{% url 'issue_create' %}">Add new issue</a>
-        </li>
+    {% if perms.homework62.add_project %}
         <li class="nav-item">
             <a class="nav-link" href="{% url 'project_create' %}">Create Project</a>
         </li>
@@ -22,7 +19,7 @@
             <p class="card-text">{{ project.description }}</p>
             <p class="card-text">Members: {% for member in members %} {{ member }}; {% empty %} No members
                 yet {% endfor %}</p>
-            {% if user.is_authenticated %}
+            {% if request.user in project.members.all and perms.homework62.add_issue %}
                 <a href="{% url 'add_member' project.pk %}" class="btn btn-secondary">Add member</a>
                 <a href="{% url 'delete_member' project.pk %}" class="btn btn-secondary">Delete member</a>
             {% endif %}
@@ -30,7 +27,7 @@
     </div>
     <div class="issues_block mt-2">
         <h4>Project issues</h4>
-        {% if user.is_authenticated %}
+        {% if request.user in project.members.all and perms.homework62.add_issue %}
             <a href="{% url 'issue_project_create' project.pk %}" class="btn btn-secondary">Create new issue</a>
         {% endif %}
         {% for issue in issues %}
@@ -41,8 +38,10 @@
                     <p class="card-text">Description: {{ issue.description }}</p>
                     <p class="card-text">Status: {{ issue.status }}</p>
                     <p class="card-text">Type: {% for type in issue.type.all %} {{ type }}; {% endfor %}</p>
-                    {% if user.is_authenticated %}
+                    {% if request.user in project.members.all and perms.homework62.change_issue %}
                         <a href="{% url 'issue_update' issue.pk %}" class="btn btn-secondary">Edit</a>
+                    {% endif %}
+                    {% if request.user in project.members.all and perms.homework62.delete_issue %}
                         <a href="{% url 'issue_delete' issue.pk %}" class="btn btn-secondary">Delete</a>
                     {% endif %}
                 </div>

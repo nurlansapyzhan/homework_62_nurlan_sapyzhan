@@ -3,13 +3,10 @@
     Projects
 {% endblock %}
 {% block menu %}
-    {% if user.is_authenticated %}
-    <li class="nav-item">
-        <a class="nav-link" href="{% url 'issue_create' %}">Add new issue</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="{% url 'project_create' %}">Create Project</a>
-    </li>
+    {% if perms.homework62.add_project %}
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'project_create' %}">Create Project</a>
+        </li>
     {% endif %}
 {% endblock %}
 {% block content %}

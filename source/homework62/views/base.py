@@ -2,6 +2,7 @@ from django.db.models import Q
 from django.utils.http import urlencode
 from django.views.generic import TemplateView, RedirectView, ListView
 
+from homework62.models import Project
 from homework62.models.issue import Issue
 
 from homework62.forms import SearchForm
@@ -29,6 +30,8 @@ class IndexView(ListView):
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super().get_context_data(object_list=object_list, **kwargs)
         context['form'] = self.form
+        projects = Project.objects.all()
+        context['project'] = projects
         if self.search_value:
             context['query'] = urlencode({'search': self.search_value})
         return context

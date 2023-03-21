@@ -7,9 +7,11 @@
         <a class="nav-link" href="{% url 'projects' %}">Projects</a>
     </li>
     {% if user.is_autherticated %}
-        <li class="nav-item">
-            <a class="nav-link" href="{% url 'issue_create' %}">Add new issue</a>
-        </li>
+        {% if perms.homework62.add_issue and request.user in project.members.all %}
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'issue_create' %}">Add new issue</a>
+            </li>
+        {% endif %}
         <li class="nav-item">
             <a class="nav-link" href="{% url 'project_create' %}">Create Project</a>
         </li>
@@ -23,8 +25,10 @@
             <p class="card-text">Description: {{ issue.description }}</p>
             <p class="card-text">Status: {{ issue.status }}</p>
             <p class="card-text">Type: {% for type in issue.type.all %} {{ type }}; {% endfor %}</p>
-            {% if user.is_authenticated %}
+            {% if request.user in project.members.all and perms.homework62.change_issue %}
                 <a href="{% url 'issue_update' issue.pk %}" class="btn btn-secondary">Edit</a>
+            {% endif %}
+            {% if request.user in project.members.all and perms.homework62.delete_issue %}
                 <a href="{% url 'issue_delete' issue.pk %}" class="btn btn-secondary">Delete</a>
             {% endif %}
         </div>

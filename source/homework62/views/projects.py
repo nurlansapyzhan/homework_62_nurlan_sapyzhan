@@ -1,5 +1,6 @@
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.contrib.auth.models import User
+from django.core.exceptions import ValidationError
 from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
 from django.views.generic import ListView, DetailView, CreateView
@@ -27,7 +28,7 @@ class ProjectDetail(DetailView):
         return context
 
 
-class ProjectCreate(LoginRequiredMixin, CreateView):
+class ProjectCreate(UserPassesTestMixin, CreateView):
     template_name = 'project_create.html'
     model = Project
     form_class = ProjectForm
@@ -41,8 +42,11 @@ class ProjectCreate(LoginRequiredMixin, CreateView):
     def get_success_url(self):
         return reverse('project_detail', kwargs={'pk': self.object.pk})
 
+    def test_func(self):
+        return self.request.user.has_perm('homework62.add_project')
 
-class IssueProjectCreate(LoginRequiredMixin, CreateView):
+
+class IssueProjectCreate(UserPassesTestMixin, CreateView):
     template_name = 'issue_project_create.html'
     model = Project
     form_class = IssueProjectForm
@@ -61,9 +65,15 @@ class IssueProjectCreate(LoginRequiredMixin, CreateView):
     def get_success_url(self):
         return reverse('issue_detail', kwargs={'pk': self.object.pk})
 
+    def test_func(self):
+        return self.request.user in self.get_object().members.all() and self.request.user.has_perm(
+            'homework62.add_task')
+
 
 def add_project_member(request, pk):
     project = get_object_or_404(Project, pk=pk)
+    if request.user not in project.members.all():
+        raise ValidationError('You cant add project members')
     users = User.objects.all()
     if request.method == 'POST':
         user_id = request.POST.get('user_id')
@@ -75,6 +85,8 @@ def add_project_member(request, pk):
 
 def delete_project_member(request, pk):
     project = get_object_or_404(Project, pk=pk)
+    if request.user not in project.members.all():
+        raise ValidationError('You cant remove project members')
     if request.method == 'POST':
         user_id = request.POST.get('user_id')
         user = get_object_or_404(User, pk=user_id)

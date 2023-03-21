@@ -1,10 +1,11 @@
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+from django.core.exceptions import ValidationError
 from django.shortcuts import redirect
 from django.urls import reverse, reverse_lazy
 from django.views.generic import DetailView, CreateView, UpdateView, DeleteView
 
 from homework62.forms import IssueForm
-from homework62.models import Issue
+from homework62.models import Issue, Project
 
 
 class IssueDetail(DetailView):
@@ -12,7 +13,7 @@ class IssueDetail(DetailView):
     model = Issue
 
 
-class IssueUpdateView(LoginRequiredMixin, UpdateView):
+class IssueUpdateView(UserPassesTestMixin, UpdateView):
     template_name = 'issue_update.html'
     form_class = IssueForm
     model = Issue
@@ -25,23 +26,17 @@ class IssueUpdateView(LoginRequiredMixin, UpdateView):
             return redirect('login')
         return super().dispatch(request, *args, **kwargs)
 
-
-class IssueCreateView(LoginRequiredMixin, CreateView):
-    template_name = 'issue_create.html'
-    model = Issue
-    form_class = IssueForm
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context['project'] = 1
-        return context
-
-    def get_success_url(self):
-        return reverse('issue_detail', kwargs={'pk': self.object.pk})
+    def test_func(self):
+        return self.request.user in self.get_object().project.members.all() and self.request.user.has_perm(
+            'homework62.change_issue')
 
 
-class IssueDeleteView(LoginRequiredMixin, DeleteView):
+class IssueDeleteView(UserPassesTestMixin, DeleteView):
     template_name = 'issue_delete.html'
     model = Issue
     context_object_name = 'issue'
     success_url = reverse_lazy('index')
+
+    def test_func(self):
+        return self.request.user in self.get_object().project.members.all() and self.request.user.has_perm(
+            'homework62.delete_issue')
