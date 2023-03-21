@@ -1,4 +1,4 @@
-from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+from django.contrib.auth.mixins import UserPassesTestMixin
 from django.contrib.auth.models import User
 from django.core.exceptions import ValidationError
 from django.shortcuts import get_object_or_404, redirect, render
@@ -7,7 +7,7 @@ from django.views.generic import ListView, DetailView, CreateView, DeleteView, U
 
 from homework62.models import Project, Issue
 
-from homework62.forms import ProjectForm, IssueForm, IssueProjectForm
+from homework62.forms import ProjectForm, IssueProjectForm
 
 
 class ProjectsView(ListView):

@@ -1,11 +1,10 @@
-from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
-from django.core.exceptions import ValidationError
+from django.contrib.auth.mixins import UserPassesTestMixin
 from django.shortcuts import redirect
 from django.urls import reverse, reverse_lazy
-from django.views.generic import DetailView, CreateView, UpdateView, DeleteView
+from django.views.generic import DetailView, UpdateView, DeleteView
 
 from homework62.forms import IssueForm
-from homework62.models import Issue, Project
+from homework62.models import Issue
 
 
 class IssueDetail(DetailView):
